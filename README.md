@@ -23,7 +23,7 @@ No API keys. No accounts. No email gates.
 
 **Currently serving:** 11 brands with fully automated content pipelines. Each brand has its voice codified as 40-60 enforceable rules, a video production engine, and multi-platform distribution.
 
-[whystrohm.com](https://whystrohm.com) | [Score your content free](https://whystrohm.com/scan) | [YouTube](https://youtube.com/@Whystrohm) | [LinkedIn](https://linkedin.com/in/yuri-strohm)
+[whystrohm.com](https://whystrohm.com) | [Score your content free](https://whystrohm.com/scan?utm_source=github&utm_medium=repo-cta&utm_campaign=2026-04-10-closed-loop) | [YouTube](https://youtube.com/@Whystrohm) | [LinkedIn](https://linkedin.com/in/yuri-strohm)
 
 ---
 
