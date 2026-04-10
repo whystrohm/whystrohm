@@ -24,3 +24,17 @@ No API keys. No accounts. No email gates.
 **Currently serving:** 11 brands with fully automated content pipelines. Each brand has its voice codified as 40-60 enforceable rules, a video production engine, and multi-platform distribution.
 
 [whystrohm.com](https://whystrohm.com) | [Score your content free](https://whystrohm.com/scan) | [YouTube](https://youtube.com/@Whystrohm) | [LinkedIn](https://linkedin.com/in/yuri-strohm)
+
+---
+
+## Brand Infrastructure Consulting
+
+This is one component of the full brand infrastructure I build for founder-led brands. The free skills extract the voice. Then I build the rest.
+
+Voice guardrails encoded into every content pipeline. Programmatic video production. Automated publishing across all channels. One operator, full stack, 30 minutes of your time per week.
+
+11 brands. 800+ videos. You own everything I build.
+
+→ [whystrohm.com/pricing](https://whystrohm.com/pricing?utm_source=github&utm_medium=repo-cta&utm_campaign=2026-04-10-closed-loop)
+
+See client proof → [whystrohm.com/results](https://whystrohm.com/results?utm_source=github&utm_medium=repo-cta&utm_campaign=2026-04-10-closed-loop)
