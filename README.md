@@ -10,7 +10,7 @@ I extract it, codify it as enforceable rules, and build a system that produces b
 
 | Tool | What It Does | Install |
 |-------|-------------|---------|
-| [**shotkit**](https://github.com/whystrohm/shotkit) **· NEW** | Pre-production for founder-led video at scale. Turn a brief into a storyboard, shot specs, per-generator prompts, and a versioned audit trail. Four Claude Code skills. | `git clone https://github.com/whystrohm/shotkit.git && cd shotkit && ./install.sh` |
+| [**shotkit**](https://github.com/whystrohm/shotkit) **· NEW** | Pre-production for founder-led video at scale. Turn a brief into a storyboard, shot specs, per-generator prompts, and a versioned audit trail. Five Claude Code skills. | `git clone https://github.com/whystrohm/shotkit.git && cd shotkit && ./install.sh` |
 | [Ritual](https://github.com/whystrohm/ritual) | Scans your shell history + repos + Claude Code memory. Ranks your top 5 routine candidates. Drafts your first Claude Code scheduled trigger with real repo names, paste-ready. | [Download `.skill` ↗](https://github.com/whystrohm/ritual/releases/latest) |
 | [Digital Twin](https://github.com/whystrohm/digital-twin-of-yourself) | Reverse-engineer how you think and talk. Build a stress-tested AI System Prompt of yourself. | `git clone https://github.com/whystrohm/digital-twin-of-yourself.git ~/.claude/skills/digital-twin` |
 | [Content Audit](https://github.com/whystrohm/whystrohm-audit) | Score your content against a 5-layer framework. See what's broken. Get one piece rewritten live. | `git clone https://github.com/whystrohm/whystrohm-audit.git ~/.claude/skills/whystrohm-audit` |
@@ -47,8 +47,9 @@ No API keys. No accounts. No email gates. shotkit, Ritual, and the four skill re
  shotkit (pre-production layer, Claude Code skills)
    │   brief becomes structured storyboard files and per-generator prompts
    ▼
+   ├── brand-lock-extractor ... site, PDF, or screenshots → brand-lock.md
    ├── storyboard-architect ... brief → storyboard.md + shots.json
-   ├── visual-prompt-forge .... shots → 7 generator-specific prompt files
+   ├── visual-prompt-forge .... shots → 10 generator-specific prompt files
    ├── visual-asset-critic .... QA loop on generated images
    └── storyboard-html-preview  shareable single-file HTML preview
 ```
