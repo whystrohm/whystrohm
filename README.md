@@ -1,77 +1,62 @@
-### I become your brand's creative engine.
+### WhyStrohm
 
-Your brand has a voice. It lives in your head, how you explain things on sales calls, in team meetings, to investors. The problem is that voice doesn't scale. It stays trapped in you.
-
-I extract it, codify it as enforceable rules, and build a system that produces brand-consistent content without routing everything through the founder. Then I run it.
-
----
-
-**Free tools.** Install any of these and run them on your own content:
-
-| Tool | What It Does | Install |
-|-------|-------------|---------|
-| [**shotkit**](https://github.com/whystrohm/shotkit) **· NEW** | Pre-production for founder-led video at scale. Turn a brief into a storyboard, shot specs, per-generator prompts, and a versioned audit trail. Five Claude Code skills. | `git clone https://github.com/whystrohm/shotkit.git && cd shotkit && ./install.sh` |
-| [Ritual](https://github.com/whystrohm/ritual) | Scans your shell history + repos + Claude Code memory. Ranks your top 5 routine candidates. Drafts your first Claude Code scheduled trigger with real repo names, paste-ready. | [Download `.skill` ↗](https://github.com/whystrohm/ritual/releases/latest) |
-| [Digital Twin](https://github.com/whystrohm/digital-twin-of-yourself) | Reverse-engineer how you think and talk. Build a stress-tested AI System Prompt of yourself. | `git clone https://github.com/whystrohm/digital-twin-of-yourself.git ~/.claude/skills/digital-twin` |
-| [Content Audit](https://github.com/whystrohm/whystrohm-audit) | Score your content against a 5-layer framework. See what's broken. Get one piece rewritten live. | `git clone https://github.com/whystrohm/whystrohm-audit.git ~/.claude/skills/whystrohm-audit` |
-| [Voice Extract](https://github.com/whystrohm/whystrohm-voice-extract) | Extract a structured voice profile from any URL. 6 dimensions scored, 15+ guardrails generated. | `git clone https://github.com/whystrohm/whystrohm-voice-extract.git ~/.claude/skills/whystrohm-voice-extract` |
-| [Voice Scorer](https://github.com/whystrohm/whystrohm-voice-scorer) | Measure voice drift between your website and social content. Find where the brand is leaking. | `git clone https://github.com/whystrohm/whystrohm-voice-scorer.git ~/.claude/skills/whystrohm-voice-scorer` |
-| [media-tsunami](https://github.com/whystrohm/media-tsunami) | The empirical layer. Extracts brand voice as executable code (cadence, signature vocab, forbidden words, exemplar sentences) serialized as a drop-in `CLAUDE.md` any LLM can load. | `git clone https://github.com/whystrohm/media-tsunami.git && cd media-tsunami && pip install -e .` |
-
-No API keys. No accounts. No email gates. shotkit, Ritual, and the four skill repos install into Claude Code as skills. media-tsunami is a Python CLI that generates the files those skills consume.
+WhyStrohm makes films, posts and campaigns for founder-led companies. One brand across
+your channels, made every month. The tools below are the free, open part of how that
+work gets planned.
 
 ---
 
-### How they work together
+## Shotkit
 
-```
- Ritual (orchestration layer, Claude Code scheduled triggers)
-   │   scans your machine, drafts the routine that runs the rest
-   ▼
- media-tsunami (Python CLI)
-   │   generates brand-config.json + CLAUDE.md
-   ▼
-   ├── Voice Extract .... quick conversational voice analysis
-   ├── Content Audit .... scores new content against the extracted voice
-   ├── Voice Scorer ..... measures social-vs-site drift using the forbidden list
-   └── Digital Twin ..... layers personal voice on top of brand voice
+**From one line of brief to a board with every shot planned, prompted and checked.**
+
+[![The Shotkit board replaying a real run: the brief, the plan, prompts, frames and the check on each frame](https://raw.githubusercontent.com/whystrohm/shotkit/main/docs/images/demo.gif)](https://github.com/whystrohm/shotkit)
+
+```bash
+git clone https://github.com/whystrohm/shotkit.git
+cd shotkit && ./install.sh
 ```
 
-**Ritual is the orchestration layer.** Claude Code routines are scheduled remote agents that run in Anthropic's cloud. Ritual tells you which one to build first based on your actual work, then hands you the paste-ready prompt. The four skills above become what the scheduled routines invoke.
+Then in Claude Code: `/shotkit 30-second launch video for your company, 9:16`
 
-**tsunami is the ground-truth layer.** It computes the empirical voice profile once: cadence statistics, vocabulary clusters, centroid-based exemplar sentences, forbidden words vs a wikitext baseline. Output is deterministic and reproducible.
+- Plans every shot: length, framing and on-screen text.
+- Writes a prompt per shot for ten image and video generators.
+- Checks each frame against its shot and the brand, and says what to fix.
+- Opens one board in your browser that shows all of it, with copy buttons.
+- With your own fal.ai key, makes the frames and the clips too.
 
-**The four Claude skills are conversational operators.** They run inside Claude, fast and subjective, and can use the tsunami output as their shared reference point. Use them standalone for quick work, or chain them on top of a tsunami-generated `brand-config.json` for multi-brand consistency. Scheduled sweeps via Ritual keep them running nightly across every repo.
+A marketing team can put ten concepts on ten boards in an afternoon. What comes out is
+raw material to a plan, not a finished video.
 
-```
- shotkit (pre-production layer, Claude Code skills)
-   │   brief becomes structured storyboard files and per-generator prompts
-   ▼
-   ├── brand-lock-extractor ... site, PDF, or screenshots → brand-lock.md
-   ├── storyboard-architect ... brief → storyboard.md + shots.json
-   ├── visual-prompt-forge .... shots → 10 generator-specific prompt files
-   ├── visual-asset-critic .... QA loop on generated images
-   └── storyboard-html-preview  shareable single-file HTML preview
-```
-
-**shotkit is the pre-production layer.** Brief in, structured storyboard files out. Composes with the voice tools above when the brand-pack drives the storyboard's brand-lock.
+[Repo](https://github.com/whystrohm/shotkit) · [Docs](https://whystrohm.com/shotkit) · [A live board](https://whystrohm.com/shotkit/examples/harbor-roast/board.html)
 
 ---
 
-**Currently serving:** founder-led brands. Each brand has its voice codified as 40-60 enforceable rules, a video production engine, and multi-platform distribution.
+## More free tools
 
-[whystrohm.com](https://whystrohm.com) | [Score your content free](https://whystrohm.com/scan?utm_source=github&utm_medium=repo-cta&utm_campaign=2026-04-10-closed-loop) | [YouTube](https://youtube.com/@Whystrohm) | [LinkedIn](https://linkedin.com/in/yuri-strohm)
+| Tool | What it does |
+|---|---|
+| [**Digital Twin**](https://github.com/whystrohm/digital-twin-of-yourself) | Works out how you think, talk and decide, and turns it into a tested system prompt of you. Runs on any model. |
+| [**Content Audit**](https://github.com/whystrohm/whystrohm-audit) | Scores your content against five layers, says what is broken and rewrites one piece. |
+
+Also public: [Voice Extract](https://github.com/whystrohm/whystrohm-voice-extract),
+[Voice Scorer](https://github.com/whystrohm/whystrohm-voice-scorer),
+[Ritual](https://github.com/whystrohm/ritual),
+[foundrkit-lint](https://github.com/whystrohm/foundrkit-lint) and
+[media-tsunami](https://github.com/whystrohm/media-tsunami).
+
+Everything here is free and open source. Nothing ships with a key. Where a tool can call
+a paid service, you connect your own account.
 
 ---
 
-## Brand Infrastructure Consulting
+## The finished video is the service
 
-This is one component of the full brand infrastructure I build for founder-led brands. The free skills extract the voice. Then I build the rest.
+The tools plan the work. Editing it, setting the type, grading, sound, every size a
+campaign needs and posting are one connected system WhyStrohm builds for a company and
+runs every month.
 
-Voice guardrails encoded into every content pipeline. Programmatic video production. Publishing across every platform, every aspect ratio. One operator, full stack, 30 minutes of your time per week.
+Write to [hello@whystrohm.com](mailto:hello@whystrohm.com) or apply at
+[whystrohm.com/apply](https://whystrohm.com/apply).
 
-You own everything I build.
-
-→ [whystrohm.com/pricing](https://whystrohm.com/pricing?utm_source=github&utm_medium=repo-cta&utm_campaign=2026-04-10-closed-loop)
-
-See client proof → [whystrohm.com/results](https://whystrohm.com/results?utm_source=github&utm_medium=repo-cta&utm_campaign=2026-04-10-closed-loop)
+[whystrohm.com](https://whystrohm.com) · [YouTube](https://youtube.com/@Whystrohm)
