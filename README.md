@@ -10,7 +10,7 @@ work gets planned.
 
 **From one line of brief to a board with every shot planned, prompted and checked.**
 
-[![The Shotkit board replaying a real run: the brief, the plan, prompts, frames and the check on each frame](https://raw.githubusercontent.com/whystrohm/shotkit/main/docs/images/demo.gif)](https://github.com/whystrohm/shotkit)
+[![The Shotkit board replaying a real run: the brief, the plan, prompts, frames and the check on each frame](https://raw.githubusercontent.com/whystrohm/shotkit/main/docs/images/demo.webp)](https://github.com/whystrohm/shotkit)
 
 ```bash
 git clone https://github.com/whystrohm/shotkit.git
