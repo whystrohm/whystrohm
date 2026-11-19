@@ -12,12 +12,13 @@ work gets planned.
 
 [![The Shotkit board replaying a real run: the brief, the plan, prompts, frames and the check on each frame](https://raw.githubusercontent.com/whystrohm/shotkit/main/docs/images/demo.webp)](https://github.com/whystrohm/shotkit)
 
-```bash
-git clone https://github.com/whystrohm/shotkit.git
-cd shotkit && ./install.sh
+In Claude Code:
+
+```
+/plugin install shotkit --marketplace whystrohm/shotkit
 ```
 
-Then in Claude Code: `/shotkit 30-second launch video for your company, 9:16`
+Then type a brief: `/shotkit:shotkit 30-second launch video for your company, 9:16`
 
 - Plans every shot: length, framing and on-screen text.
 - Writes a prompt per shot for ten image and video generators.
@@ -26,7 +27,7 @@ Then in Claude Code: `/shotkit 30-second launch video for your company, 9:16`
 - With your own fal.ai key, makes the frames and the clips too.
 
 A marketing team can put ten concepts on ten boards in an afternoon. What comes out is
-raw material to a plan, not a finished video.
+a plan and raw material, not a finished video.
 
 [Repo](https://github.com/whystrohm/shotkit) · [Docs](https://whystrohm.com/shotkit) · [A live board](https://whystrohm.com/shotkit/examples/harbor-roast/board.html)
 
