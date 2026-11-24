@@ -43,7 +43,7 @@ cd digital-twin-of-yourself
 python3 twin/twin.py
 ```
 
-[Repo](https://github.com/whystrohm/digital-twin-of-yourself) · [How it works](https://github.com/whystrohm/digital-twin-of-yourself/blob/main/docs/TWIN.md)
+[Repo](https://github.com/whystrohm/digital-twin-of-yourself) · [See it on whystrohm.com/twin](https://whystrohm.com/twin) · [How it works](https://github.com/whystrohm/digital-twin-of-yourself/blob/main/docs/TWIN.md)
 
 ---
 
