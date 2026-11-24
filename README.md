@@ -28,8 +28,22 @@ In Claude Code:
 
 ## Digital Twin
 
-**Work out how you think, talk and decide, and turn it into a tested system prompt of you.**
-Runs on any model. [Repo](https://github.com/whystrohm/digital-twin-of-yourself)
+**A digital twin that knows your work.** Your decisions, voice rules and limits, in one place
+your coding sessions can ask. New in 4.0: the twin app, with a head built from your photo.
+
+[![A digital twin that knows your work. Three inputs go in: your photo becomes the head, your repos are read, your notes fill it. Then it answers a question from the notes and stops at a limit](https://raw.githubusercontent.com/whystrohm/digital-twin-of-yourself/main/assets/twin-cover.webp)](https://github.com/whystrohm/digital-twin-of-yourself)
+
+Give it one photo, the repos you pick and your notes. It answers with the note it came from,
+checks a draft against your voice rules and stops at the limits you set. On your machine.
+The demo twin is a made-up person.
+
+```
+git clone https://github.com/whystrohm/digital-twin-of-yourself.git
+cd digital-twin-of-yourself
+python3 twin/twin.py
+```
+
+[Repo](https://github.com/whystrohm/digital-twin-of-yourself) · [How it works](https://github.com/whystrohm/digital-twin-of-yourself/blob/main/docs/TWIN.md)
 
 ---
 
